@@ -35,3 +35,4 @@ gradle/wrapper/gradle-wrapper.properties
 .project
 .classpath
 .settings/
+/bin/

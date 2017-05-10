@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
 
 public class Slicer {
 	private Slicer() {
-		throw new AssertionError("Tihs class should not be constructed!");
+		throw new AssertionError("This class should not be constructed!");
 	}
 
 	public static BufferedImage[] slice(BufferedImage img, int slices) {
