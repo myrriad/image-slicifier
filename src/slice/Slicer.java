@@ -1,5 +1,6 @@
 package slice;
 
+import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -26,8 +27,8 @@ public class Slicer {
 			
 			Graphics2D g2d = ret[i].createGraphics();
 			
-			g2d.setColor(new Color(255, 255, 255, 255));
-			
+			g2d.setColor(new Color(255, 255, 255, 0));
+			g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.CLEAR));
 			for(int j = i; j < img.getHeight(); j += slices)
 				g2d.fill(new Rectangle(0, j, img.getWidth(), slices - 1));
 			
